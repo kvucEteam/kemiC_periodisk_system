@@ -24,7 +24,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(70, 130, 180, 0.3);
+    background: rgba(255, 88, 0, 0.5);
 }
 
 .AtomWeight {
@@ -48,4 +48,8 @@
 
 .selected{
     border:3px solid orange;
+}
+
+.click_blocker{
+    background-color:red;
 }
