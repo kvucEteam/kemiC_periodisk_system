@@ -68,6 +68,8 @@ h4{display: inline-block;}
 */
         /*cursor:pointer;*/   
 }  /* NOTE: 90/18 = 5%, og 5/18 = 0.27777% */
+.ElementBox:hover {background-color: orange;}
+
 .DummyElement{position: relative; width: 5.2756%; margin: 0.14%; padding: 3px; display: inline-block; /*border: 1px solid #F00;*/ }
 .AtomNum     {position: relative; font-size: 100%;}
 .AtomName    {position: relative; }
@@ -146,6 +148,7 @@ h4{display: inline-block;}
 .TempClass}{position: absolute;}
 
 .Duplicate{position: "absolute"; background-color: #F00;}
+
 
 /*
 	===============================================================  

@@ -826,7 +826,8 @@
 
             FontSizeScalerNew(".PeriodicTableWrapper", [".AtomSymbol", ".NumberHeading", ".ElementBox", ".DragNum", ".ScoreHeaderH3",
                 ".ScoreHeader", ".ScoreNum", ".TryAgain", ".NextQuestion", ".QuizHeadingText h2",
-                ".QuizHeadingText h1", ".QuizHeadingTextCount", "#Feedbackhide", ".ScoreWrapper"
+                ".QuizHeadingText h1", ".QuizHeadingTextCount", "#Feedbackhide", ".ScoreWrapper", ".question_container", ".h4", ".selection_container"
+                // "#0","#1","#2","#3","#4","#5","#6","#7","#8","#9","#10","#11","#12","#13","#14","#15","#16","#17","#18","#19","#20","#21","#22","#23","#24","#25","#26","#27"
             ], 1425);
 
             $(".DragNum").width($(".DragNum").height());
@@ -850,7 +851,8 @@
 
             FontSizeScalerNew(".PeriodicTableWrapper", [".AtomSymbol", ".NumberHeading", ".ElementBox", ".DragNum", ".ScoreHeaderH3",
                 ".ScoreHeader", ".ScoreNum", ".TryAgain", ".NextQuestion", ".QuizHeadingText h2",
-                ".QuizHeadingText h1", ".QuizHeadingTextCount", "#Feedbackhide", ".ScoreWrapper"
+                ".QuizHeadingText h1", ".QuizHeadingTextCount", "#Feedbackhide", ".ScoreWrapper", ".question_container", ".h4", ".selection_container"
+                // "#0","#1","#2","#3","#4","#5","#6","#7","#8","#9","#10","#11","#12","#13","#14","#15","#16","#17","#18","#19","#20","#21","#22","#23","#24","#25","#26","#27"
             ], 1425);
 
             $(".DragNum").width($(".DragNum").height());
