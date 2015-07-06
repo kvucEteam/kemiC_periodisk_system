@@ -2,14 +2,18 @@ $(document).ready(function() {
 
 
 $(".ElementBox").css("pointer-events","none");
+//$(".question_container").css("margin-top","-3%");
+
+$(".PeriodicTableWrapper").css("margin-top","7%");
+$(".question_container").append("<div class='selection_container btn btn-primary btn btn_clear'>Se alle atomer</div>");
+
     for (var i = 0; i < JsonObj_pSystemEx.length; i++) {
         if (JsonObj_pSystemEx[i].selection) {
-            $(".question_container").append("<div class='selection_container btn btn-default btn-sm' id = '" + i + "'>" + JsonObj_pSystemEx[i].selection + "</div>");
+            $(".question_container").append("<div class='selection_container btn btn-default btn' id = '" + i + "'>" + JsonObj_pSystemEx[i].selection + "</div>");
         }
 
     }
-    $(".question_container").append("<br/><div class='selection_container btn btn-default btn-sm btn_clear'>Se alt</div>");
-    //alert(JsonObj_pSystemEx.
+        //alert(JsonObj_pSystemEx.
     $(".selection_container").click(function() {
 
         skift_visning($(this));
