@@ -1,12 +1,14 @@
 .question_container {
-    margin-left: 10%;
-    margin-top: -2%;
-    width: 57%;
-    height: 120px;
-    text-align: top;
-    position: absolute;
-    height: 35%;
-    padding: 10px;
+  margin-left: 10.5%;
+  margin-top: 0%;
+  width: 56%;
+  height: 120px;
+  text-align: top;
+  position: absolute;
+  height: 36%;
+  padding: 10px;
+  
+  border-radius: 6px;
 }
 /*.eBox_selected {
     background-color: purple;

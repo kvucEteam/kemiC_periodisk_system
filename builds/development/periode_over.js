@@ -73,8 +73,17 @@
          console.log("Number: " + number + ", rigtige: " + rigtige);
 
          if (rigtige > number - 1) {
-             UserMsgBox(".inner_container", "Rigtigt svaret! <br/>Du havde " + errors + " forkerte grundstofatomer i dette spørgsmål.");
-             //$(".MsgBox_bgr").css("background-color", "rgba(0,0,0,0.0)");
+             UserMsgBox(".question_container", "Rigtigt svaret! <br/>Du havde " + errors + " forkerte grundstofatomer i dette spørgsmål.");
+             for (var i = 0; i < $(".ElementBox").length; i++) {
+                 var a_num = parseInt($(".ElementBox").eq(i).find(".AtomNum").html());
+                 if (svar.indexOf(a_num) > -1) {
+                     if ($(".ElementBox").eq(i).hasClass("eBox_selected")) {} else {
+                         $(".ElementBox").eq(i).prepend("<div class='selectedoverlay'></div>");
+                     }
+                 }
+             }
+             $(".MsgBox_bgr").css("background-color", "rgba(0,0,0,0.0)");
+             $("#UserMsgBox").css("background-color", "#ddd").css("border-radius", "4px")
              $(".MsgBox_bgr").click(function() {
                  $(".ElementBox").find(".selectedoverlay").fadeOut(300);
                  $(".ElementBox").removeClass("eBox_selected");

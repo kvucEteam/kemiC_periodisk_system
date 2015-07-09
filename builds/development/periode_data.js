@@ -1,7 +1,7 @@
 var JsonObj_pSystemEx = [{
     "selection": "Ædelgasser",
     "question": "hører til ædelgasserne",
-    "korrekte_svar": [2, 10, 18, 36, 54, 86],
+    "korrekte_svar": [2, 10, 18, 36, 54, 86,118],
     "Sværhedsgrad": ""
 }, {
     "selection": "Ikke-metaller",
