@@ -6,12 +6,12 @@ var JsonObj_pSystemEx = [{
 }, {
     "selection": "Ikke-metaller",
     "question": "er ikke-metaller",
-    "korrekte_svar": [1, 2, 5, 6, 7, 8, 14, 15, 16, 17, 18, 33, 34, 35, 36, 52, 53, 54, 85, 86],
+    "korrekte_svar": [1, 2, 5, 6, 7, 8, 9,10, 14, 15, 16, 17, 18,32, 33, 34, 35, 36, 51,52, 53, 54, 84,85, 86, 117, 118],
     "Sværhedsgrad": ""
 }, {
     "selection": "Metaller",
     "question": "er metaller",
-    "korrekte_svar": [3, 4, 11, 12, 13, 19, 20, 12, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 79, 80, 81, 82, 83, 84, 87, 88, 89, 90],
+    "korrekte_svar": [3, 4, 11, 12, 13, 19, 20, 12, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 79, 80, 81, 82, 83,  87, 88, 89, 90, 104, 105, 106, 107,108,109,110,111,112,113,114,115,116],
     "Sværhedsgrad": ""
 }, {
     "selection": "Gasser",
@@ -26,7 +26,7 @@ var JsonObj_pSystemEx = [{
 }, {
     "selection": "Halogener",
     "question": "er halogener",
-    "korrekte_svar": [9, 17, 35, 53, 85],
+    "korrekte_svar": [9, 17, 35, 53, 85,117],
     "Sværhedsgrad": ""
 }, {
     "selection": "Alkalimetaller",
@@ -80,32 +80,32 @@ var JsonObj_pSystemEx = [{
 }, {
     "selection": "3. Hovedgruppe",
     "question": "tilhører 3. hovedgruppe",
-    "korrekte_svar": [5, 13, 31, 49, 81],
+    "korrekte_svar": [5, 13, 31, 49, 81, 113],
     "Sværhedsgrad": ""
 }, {
     "selection": "4. Hovedgruppe",
     "question": "tilhører 4. hovedgruppe",
-    "korrekte_svar": [6, 14, 32, 50, 82],
+    "korrekte_svar": [6, 14, 32, 50, 82,114],
     "Sværhedsgrad": ""
 }, {
     "selection": "5. Hovedgruppe",
     "question": "tilhører 5. hovedgruppe",
-    "korrekte_svar": [7, 15, 33, 51, 83],
+    "korrekte_svar": [7, 15, 33, 51, 83, 115],
     "Sværhedsgrad": ""
 }, {
     "selection": "6. Hovedgruppe",
     "question": "tilhører 6. hovedgruppe",
-    "korrekte_svar": [8, 16, 34, 52, 84],
+    "korrekte_svar": [8, 16, 34, 52, 84, 116],
     "Sværhedsgrad": ""
 }, {
     "selection": "7. Hovedgruppe",
     "question": "tilhører 7. hovedgruppe",
-    "korrekte_svar": [9, 17, 35, 53, 85],
+    "korrekte_svar": [9, 17, 35, 53, 85, 117],
     "Sværhedsgrad": ""
 }, {
     "selection": "8. Hovedgruppe",
     "question": "tilhører 8. hovedgruppe",
-    "korrekte_svar": [2, 10, 18, 36, 54, 86],
+    "korrekte_svar": [2, 10, 18, 36, 54, 86, 118],
     "Sværhedsgrad": ""
 }, {
     "selection": "1. Periode",
