@@ -1,6 +1,6 @@
      //ØVELSES VARS HERUNDER: 
 
-     var runde = 0;
+     var runde = 1;
      var spm;
      var svar;
      var rigtige = 0;
@@ -38,6 +38,9 @@
 
          /// KØR OPGAVEN DMR: 
 
+        $(document).on('click', ".TryAgain", function(event) {
+            location.reload();
+        });
 
      });
 
@@ -88,7 +91,20 @@
                  $(".ElementBox").find(".selectedoverlay").fadeOut(300);
                  $(".ElementBox").removeClass("eBox_selected");
 
-                 pose_question(JsonObj_pSystemEx, score);
+                console.log("tjek_svar - JsonObj_pSystemEx.length: " + JsonObj_pSystemEx.length + ", score: " + score + ", runde: " + runde);
+
+                if (score  == JsonObj_pSystemEx.length){
+                    UserMsgBox("body", "<span class='feedbackbox_txtstyle_overskrift'>Flot</span><br/>Du har lavet " + score + " opgaver korrekt. <br/> Du havde " + fejl + ' fejl undervejs. <br/><br/>Klik på "Prøv igen" knappen for at løse ' + score + ' nye opgaver.');
+                    // UserMsgBox(".container-fluid", "<span class='feedbackbox_txtstyle_overskrift'>Flot</span><br/>Du har lavet " + score + " opgaver korrekt. <br/> Du havde " + fejl + ' fejl undervejs. <br/><br/>Klik på "Prøv igen" knappen for at løse ' + score + ' nye opgaver.');
+                    // location.reload();
+                    $(".btn-tjek_svar").addClass("TryAgain");
+                    $(".TryAgain").removeClass("btn-tjek_svar"); // btn-tjek_svar
+                    $(".TryAgain").text("Prøv igen");
+                } else{
+                    pose_question(JsonObj_pSystemEx, score);
+                }
+
+
              });
              score++;
          }
@@ -108,9 +124,11 @@
              } else {
                  number_txt = "de " + number;
              }
-             $(".spm").html("Spørgsmål " + runde + " / " + JsonObj_pSystemEx.length +
+             $(".spm").html("Spørgsmål " + String(runde + 1)  + " / " + JsonObj_pSystemEx.length +
                  "</div><br/>Find " + number_txt + " grundstoffer som " + spm);
 
              //alert("pose it");
-         }
+
+           
          /////
+    }
