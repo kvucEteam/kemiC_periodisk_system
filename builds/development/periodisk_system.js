@@ -858,6 +858,7 @@
             $(".DragNum").width($(".DragNum").height());
         });
 
+        one_line_footer();
 
     });
 
