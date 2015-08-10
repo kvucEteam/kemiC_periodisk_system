@@ -1,6 +1,6 @@
      //ØVELSES VARS HERUNDER: 
 
-     var runde = 1;
+     var runde = 0;
      var spm;
      var svar;
      var rigtige = 0;
@@ -11,9 +11,6 @@
 
 
      $(document).ready(function() {
-
-
-
 
          JsonObj_pSystemEx = shuffle_Array(JsonObj_pSystemEx);
 
@@ -35,17 +32,23 @@
          });
 
          $(".btn-tjek_svar").click(tjek_svar);
-
+         $(".btn-skip_svar").click(skip_svar);
          /// KØR OPGAVEN DMR: 
 
-        $(document).on('click', ".TryAgain", function(event) {
-            location.reload();
-        });
 
      });
 
+     function skip_svar() {
+         console.log("skip_svar: " + runde);
+         runde++;
+
+         pose_question(JsonObj_pSystemEx, runde);
+
+     }
 
      function tjek_svar() {
+
+         console.log("Klikkede på tjek..(runde)" + runde)
          rigtige = 0;
          errors = 0;
          $(".eBox_selected").each(function(index) {
@@ -60,9 +63,7 @@
                  $(this).removeClass("eBox_selected");
                  $(this).find(".selectedoverlay").fadeOut(300, function() {
                      $(this).remove();
-
                  });
-
              }
 
              console.log(index + ": " + $(this).text());
@@ -76,7 +77,7 @@
          console.log("Number: " + number + ", rigtige: " + rigtige);
 
          if (rigtige > number - 1) {
-             UserMsgBox(".question_container", "Rigtigt svaret! <br/>Du havde " + errors + " forkerte grundstofatomer i dette spørgsmål.");
+             UserMsgBox(".question_container", "Rigtigt svaret!");
              for (var i = 0; i < $(".ElementBox").length; i++) {
                  var a_num = parseInt($(".ElementBox").eq(i).find(".AtomNum").html());
                  if (svar.indexOf(a_num) > -1) {
@@ -86,49 +87,59 @@
                  }
              }
              $(".MsgBox_bgr").css("background-color", "rgba(0,0,0,0.0)");
-             $("#UserMsgBox").css("background-color", "#ddd").css("border-radius", "4px")
+             $("#UserMsgBox").css("background-color", "#ddd").css("border-radius", "4px").css("opacity", "0.8");
              $(".MsgBox_bgr").click(function() {
                  $(".ElementBox").find(".selectedoverlay").fadeOut(300);
                  $(".ElementBox").removeClass("eBox_selected");
 
-                console.log("tjek_svar - JsonObj_pSystemEx.length: " + JsonObj_pSystemEx.length + ", score: " + score + ", runde: " + runde);
-
-                if (score  == JsonObj_pSystemEx.length){
-                    UserMsgBox("body", "<span class='feedbackbox_txtstyle_overskrift'>Flot</span><br/>Du har lavet " + score + " opgaver korrekt. <br/> Du havde " + fejl + ' fejl undervejs. <br/><br/>Klik på "Prøv igen" knappen for at løse ' + score + ' nye opgaver.');
-                    // UserMsgBox(".container-fluid", "<span class='feedbackbox_txtstyle_overskrift'>Flot</span><br/>Du har lavet " + score + " opgaver korrekt. <br/> Du havde " + fejl + ' fejl undervejs. <br/><br/>Klik på "Prøv igen" knappen for at løse ' + score + ' nye opgaver.');
-                    // location.reload();
-                    $(".btn-tjek_svar").addClass("TryAgain");
-                    $(".TryAgain").removeClass("btn-tjek_svar"); // btn-tjek_svar
-                    $(".TryAgain").text("Prøv igen");
-                } else{
-                    pose_question(JsonObj_pSystemEx, score);
-                }
-
-
+                 pose_question(JsonObj_pSystemEx, score);
              });
              score++;
+         } else {
+             UserMsgBox(".question_container", "Du mangler stadig at finde " + (number - rigtige) + " grundstoffer. <br/>Evt forkerte svar er fjernet. Prøv igen");
+             $(".MsgBox_bgr").css("background-color", "rgba(0,0,0,0.0)");
+             $("#UserMsgBox").css("background-color", "#ddd").css("border-radius", "4px").css("opacity", "0.8");
          }
 
          $(".score").html("Score: " + score + " Fejl: " + fejl);
      }
 
      function pose_question(JsonObj_pSystemEx, runde) {
+         console.log("runde: " + runde + "pose...")
+         if (runde > JsonObj_pSystemEx.length - 1) {
+             console.log("END");
 
-             spm = String(JsonObj_pSystemEx[runde].question);
-             svar = JsonObj_pSystemEx[runde].korrekte_svar;
-             number = svar.length;
-             var number_txt;
-             if (number > 9) {
-                 number = 10;
-                 number_txt = 10;
-             } else {
-                 number_txt = "de " + number;
-             }
-             $(".spm").html("Spørgsmål " + String(runde + 1)  + " / " + JsonObj_pSystemEx.length +
-                 "</div><br/>Find " + number_txt + " grundstoffer som " + spm);
+             UserMsgBox(".question_container", "Du er nået hele rækken af spørgsmål igennem med " + score + " ud af " + JsonObj_pSystemEx.length + " rigtige svar. <br/>Klik for at starte forfra.");
+             $(".MsgBox_bgr").css("background-color", "rgba(0,0,0,0.0)");
+             $("#UserMsgBox").css("background-color", "#ddd").css("border-radius", "4px").css("opacity", "0.8");
+             $(".MsgBox_bgr").click(function() {
+                 location.reload();
+             });
 
-             //alert("pose it");
 
-           
-         /////
-    }
+         } else {
+             console.log("CONTINUE")
+             console.log("Runde: " + runde)
+         }
+
+
+         spm = String(JsonObj_pSystemEx[runde].question);
+         svar = JsonObj_pSystemEx[runde].korrekte_svar;
+         number = svar.length;
+
+
+
+         var number_txt;
+         if (number > 9) {
+             number = 10;
+             number_txt = 10;
+         } else {
+             number_txt = "de " + number;
+         }
+         $(".spm").html("Spørgsmål " + (runde + 1) + " / " + JsonObj_pSystemEx.length +
+             "</div><br/>Find " + number_txt + " grundstoffer som " + spm);
+
+         //alert("pose it");
+         console.log("end pose question.. (runde)" + runde);
+     }
+     /////
