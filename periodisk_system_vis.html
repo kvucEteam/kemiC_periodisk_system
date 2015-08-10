@@ -12,7 +12,7 @@
     <!-- 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
  -->
-    <link rel="stylesheet" href="../../../library/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../library/css/styles.css" type="text/css" />
     <link rel="stylesheet" href="periodisk_system.css" type="text/css" />
     <link rel="stylesheet" href="periodisk_system_ex.css" type="text/css" />
     <!-- Date: 2012-08-07 -->
@@ -22,17 +22,8 @@
     <div class="container-fluid">
         <div class="col-xs-12 inner_container">
             <h1> Grundstoffernes periodesystem </h1>
-            
             <div class="question_container">
-                <div class='score'>Score: 0 Fejl: 0</div>
-                <div class="spm h4">
-                </div>
-                <div class="col-sm-12 hidden-sm hidden-xs ">
-                    <div class="btn btn-default btn-tjek_svar">Tjek svar </div>
-                </div>
-                <div class="col-sm-12 hidden-md hidden-lg">
-                    <div class="btn btn-sm btn-default btn-tjek_svar">Tjek svar </div>
-                </div>
+            <H4 class="h4>">Vælg en visning: </H4><br/>
             </div>
             <div class="ChemicakStructureWrapper1">
             </div>
@@ -48,13 +39,12 @@
     <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
  -->
-    <script src="../../../library/vendor_scripts.js"></script>
-    <script src="../../../library/custom_scripts.js"></script>
+    <script src="../library/vendor_scripts.js"></script><script src="../library/custom_scripts.js"></script>
     <script src="periodisk_system.js"></script>
     <script src="periode_data.js"></script>
-    <script src="periode_over.js"></script>
+    <script src="periode_viser.js"></script>
     <script>
-    var opgavetype = "ovelse";
+    var opgavetype = "vis";
     // Denne linje virker fint lokalt i Git-serveren, men ikke på  http://eundervisning-wp.dk/objekter/kemi_drag/builds/development/ , så 
     // derfor ukommenteres den midlertidigt:
     // loadData("kemi_drag.json");
