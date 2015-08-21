@@ -1,15 +1,16 @@
 .question_container {
-  margin-left: 10.5%;
-  margin-top: 0%;
-  width: 56%;
-  height: 120px;
-  text-align: top;
-  position: absolute;
-  height: 36%;
-  padding: 10px;
-  
-  border-radius: 6px;
+    margin-left: 10.5%;
+    margin-top: 0%;
+    width: 56%;
+    height: 120px;
+    text-align: top;
+    position: absolute;
+    height: 36%;
+    padding: 10px;
+    border-radius: 6px;
 }
+
+
 /*.eBox_selected {
     background-color: purple;
 }
@@ -36,7 +37,7 @@
 
 .selection_container {
     display: inline-flex;
-    cursor:pointer;
+    cursor: pointer;
     margin-left: -12px;
     margin-bottom: 4px;
     margin-left: 0px;
@@ -48,14 +49,25 @@
     -webkit-filter: blur(3px);
 }
 
-.selected{
-    border:3px solid orange;
+.selected {
+    border: 3px solid orange;
 }
 
-.click_blocker{
-    background-color:red;
+.click_blocker {
+    background-color: red;
 }
 
-.btn-skip_svar{
-  margin-top: 1%;
+.btn-skip_svar {
+    margin-top: 1%;
+}
+
+.vis_container {
+    height: 120px;
+    text-align: top;
+    border-radius: 6px;
+    margin-bottom: -5%;
+    margin-top: -20px;
+}
+.no_pointer{
+  pointer-events:none;
 }

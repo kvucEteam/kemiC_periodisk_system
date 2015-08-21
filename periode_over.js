@@ -113,7 +113,7 @@
              $(".MsgBox_bgr").css("background-color", "rgba(0,0,0,0.0)");
              $("#UserMsgBox").css("background-color", "#ddd").css("border-radius", "4px").css("opacity", "0.8");
              $(".MsgBox_bgr").click(function() {
-                 location.reload();
+                 //location.reload();
              });
 
 

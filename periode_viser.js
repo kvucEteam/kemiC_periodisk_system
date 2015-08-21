@@ -5,11 +5,11 @@ $(".ElementBox").css("pointer-events","none");
 //$(".question_container").css("margin-top","-3%");
 
 $(".PeriodicTableWrapper").css("margin-top","7%");
-$(".question_container").append("<div class='selection_container btn btn-primary btn btn_clear'>Se alle atomer</div>");
+$(".vis_container").append("<div class='selection_container btn btn-primary btn btn_clear'>Se alle atomer</div>");
 
     for (var i = 0; i < JsonObj_pSystemEx.length; i++) {
         if (JsonObj_pSystemEx[i].selection) {
-            $(".question_container").append("<div class='selection_container btn btn-default btn' id = '" + i + "'>" + JsonObj_pSystemEx[i].selection + "</div>");
+            $(".vis_container").append("<div class='selection_container btn btn-default btn' id = '" + i + "'>" + JsonObj_pSystemEx[i].selection + "</div>");
         }
 
     }

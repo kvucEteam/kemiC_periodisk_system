@@ -754,7 +754,7 @@
 
         // Resize all fonts:
         var WindowWidth = $(ParentSelector).width();
-        var Ratio = Math.round(1000 * (WindowWidth / NativeWindowWidth)) / 1000; // Rounded to 3 digit precision.
+        var Ratio = Math.round(500 * (WindowWidth / NativeWindowWidth)) / 500; // Rounded to 3 digit precision.
         var ArgStr = SelectorClassArr.join();
         for (var Selector in FontSizeScalerObj) {
             if (ArgStr.indexOf(Selector) !== -1) // Only ajust the fontsizes given in SelectorClassArr:
