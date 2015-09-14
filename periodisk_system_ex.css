@@ -1,11 +1,11 @@
 .question_container {
     margin-left: 10.5%;
-    margin-top: 0%;
-    width: 56%;
-    height: 120px;
+    margin-top: -32px;
+    width: 96%;
+    /* height: 120px; */
     text-align: top;
     position: absolute;
-    height: 36%;
+    height: 45%;
     padding: 10px;
     border-radius: 6px;
 }
@@ -70,4 +70,13 @@
 }
 .no_pointer{
   pointer-events:none;
+}
+
+.PeriodicTableWrapper{
+    margin-top:100px;
+}
+
+
+.QuestionText{
+    margin-left: -12.5%;
 }

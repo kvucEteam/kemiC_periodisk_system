@@ -1,27 +1,64 @@
-body{line-height: 1;}
+body {
+    line-height: 1;
+}
 
-h1{color: #000;}  /*Midlertigigt fix*/
+h1 {
+    color: #000;
+}
 
-h4{display: inline-block;}
 
-.container-fluid{padding-left: 50px; padding-right: 50px;}
+/*Midlertigigt fix*/
 
-.btn{text-align: left; border-radius: 4px;}
-.btn-info{color: #FFF;}
+h4 {
+    display: inline-block;
+}
 
-.QuizHeadingText{color: #666;}
-.QuestionWrap{margin-left: 4%;}
-.QuestionWrap h2{display: inline-block;}
-.QuestionText{ margin-right: 2%;}
-.QuestionCorrectNew{color: #666;
-					font-size: 33%; 
-					margin-left: 8%;
-    				margin-top: 1%;
-					z-index: 5; 
-					position: absolute;
-					display: none;
-				   }
-.FeedbackWrap{margin-left: 4%;}
+.container-fluid {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.btn {
+    text-align: left;
+    border-radius: 4px;
+}
+
+.btn-info {
+    color: #FFF;
+}
+
+.QuizHeadingText {
+    color: #666;
+}
+
+.QuestionWrap {
+    margin-left: 4%;
+}
+
+.QuestionWrap h2 {
+    display: inline-block;
+}
+
+.QuestionText {
+    margin-right: 2%;
+    margin-bottom:-2px;
+}
+
+.QuestionCorrectNew {
+    color: #666;
+    font-size: 33%;
+    margin-left: 8%;
+    margin-top: 1%;
+    z-index: 5;
+    position: absolute;
+    display: none;
+}
+
+.FeedbackWrap {
+    margin-left: 4%;
+}
+
+
 /*
 #UserMsgBox{display: none; 
 				z-index: 3; 
@@ -37,135 +74,341 @@ h4{display: inline-block;}
 
 			}
 */
+
 .LukClass {
-                margin-top: -15px; 
-                margin-right: -15px;
-                color: rgba(0, 0, 0, 0.5);
-              }
-
-.MoleculeHtmlStr{z-index: 5; 
-				position: absolute;
-				margin-left: 9%;
-				margin-top: 2%;
-				font-size: 350%;
-				font-weight: 100;
-				width: 80%;
-				}
-
-.LukClass:hover {color: #000;}
-.QuizHeadingTextCount{display: inline-block; margin-bottom: 1%;}
-.NextQuestion{margin-left: 1%; margin-bottom: 1%;}
-.QuestionTask{color: #000;}
-
-.AnsMolecule{display: inline-block;}
-
-.PeriodicTableWrapper{ width: 100%; /*border: 1px solid #F00;*/}
-.ElementBox  {position: relative; font-size: 11px; width: 5.2756%; margin: 0.14%; padding: 3px; display: inline-block; line-height: 1.4; overflow: hidden;
-/*
-        IPAD-work-around til at faa HintClass-div's til at lukke:
-        http://stackoverflow.com/questions/7892863/jquery-click-not-working-with-ipad
-        http://www.mitch-solutions.com/blog/17-ipad-jquery-live-click-events-not-working
-*/
-        /*cursor:pointer;*/   
-}  /* NOTE: 90/18 = 5%, og 5/18 = 0.27777% */
-.ElementBox:hover {background-color: orange;}
-
-.DummyElement{position: relative; width: 5.2756%; margin: 0.14%; padding: 3px; display: inline-block; /*border: 1px solid #F00;*/ }
-.AtomNum     {position: relative; font-size: 100%;}
-.AtomName    {position: relative; }
-.AtomSymbol  {position: relative; font-size: 220%; }
-.AtomWeight  {position: relative; display: none;}
- 
-.lbox{width: 6%; margin-bottom: 2.8%; border: 1px solid #717272;} /* width: 12%; margin-bottom: 3%; */
-.xlbox{/*width: 12%;*/ width: 4%; margin-right: 0%; }   /*margin-right: 4%;*/
-.sbox{/*width: 33%;*/ width: 100%; border: 1px solid #717272;}
-
-.red{border: 1px solid #F00;}
-
-.DropZone{padding-left: 4%; margin-bottom: 0%;} /* padding-left: 10%; margin-bottom: 0%; */ 
-#DropWrap1{padding-left: 9%;}
-#DropWrap2{}
-#DropWrap3{}
-.DropWrapper{}
-.DropCoeff{display: inline-block;}
-.DropElement{display: inline-block;}
-.DropChargeAndIndex{display: inline-block;}
-.DropCharge{}
-.DropIndex{}
-.DropSpacer{width: 70%;}
-.DroppedDraggable{background-color: transparent; border-color: transparent;}
-.DropZone .Dropped{text-align: center;}
-
-.ui-draggable-dragging{text-align: center;} /*Align center for all dragged elements*/
-
-
-.DropHighlight{background-color: #0F0;}
-
-.NumbersWrapper{display: inline-block; width: 40%; margin-bottom: 0%; position: absolute; left: 26%; margin-top: 1%;} /* position: absolute løser tilsyneladende problemet med NumbersWrapper i FireFox, Chrome og Safari */
-.IndexWrapper{} /* border: 1px solid #F00; */
-.ChargeWrapper{} /* border: 1px solid #F00; */
-.CoeffWrapper{/*height: 50px; border: 1px solid #F00;*/}
-
-.ScoreWrapper{display: inline-block; padding: 3px; border: 1px solid #717272; margin-left: 27%;}
-.ScoreWrapper h3{margin: 3px 0px;}
-
-.NumberHeading{font-size: 18px; margin-top: 5px;}
-.DragNum{padding: 0px; margin: 0.5%; display: inline-block; /*border: 1px solid #00F;*/ font-size: 22px; text-align: center; color: #000;
-/*
-        IPAD-work-around til at faa HintClass-div's til at lukke:
-        http://stackoverflow.com/questions/7892863/jquery-click-not-working-with-ipad
-        http://www.mitch-solutions.com/blog/17-ipad-jquery-live-click-events-not-working
-*/
-        /*cursor:pointer;*/  
+    margin-top: -15px;
+    margin-right: -15px;
+    color: rgba(0, 0, 0, 0.5);
 }
-.IndexNum{}
-.ChargeNum{}
-.CoeffNum{}
 
-.left{float: left;}
-.right{float: right;}
-.clear{clear: both;}
+.MoleculeHtmlStr {
+    z-index: 5;
+    position: absolute;
+    margin-left: 9%;
+    margin-top: 2%;
+    font-size: 350%;
+    font-weight: 100;
+    width: 80%;
+}
+
+.LukClass:hover {
+    color: #000;
+}
+
+.QuizHeadingTextCount {
+    display: inline-block;
+    margin-bottom: 1%;
+}
+
+.NextQuestion {
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+
+.QuestionTask {
+    color: #000;
+}
+
+.AnsMolecule {
+    display: inline-block;
+}
+
+.PeriodicTableWrapper {
+    width: 100%;
+    /*border: 1px solid #F00;*/
+}
+
+.ElementBox {
+    position: relative;
+    font-size: 11px;
+    width: 5.2756%;
+    margin: 0.14%;
+    padding: 3px;
+    display: inline-block;
+    line-height: 1.4;
+    overflow: hidden;
+    /*
+        IPAD-work-around til at faa HintClass-div's til at lukke:
+        http://stackoverflow.com/questions/7892863/jquery-click-not-working-with-ipad
+        http://www.mitch-solutions.com/blog/17-ipad-jquery-live-click-events-not-working
+*/
+    /*cursor:pointer;*/
+}
 
 
-.droppable{/*border: 1px solid #717272;*/}
+/* NOTE: 90/18 = 5%, og 5/18 = 0.27777% */
 
-.XTEST{background-color: #0F0;}
+.ElementBox:hover {
+    background-color: orange;
+}
 
-.FontRed{color: #F00;}
-.FontGreen{color: #0F0;}
-.FontBlue{color: #00F;}
+.DummyElement {
+    position: relative;
+    width: 5.2756%;
+    margin: 0.14%;
+    padding: 3px;
+    display: inline-block;
+    /*border: 1px solid #F00;*/
+}
 
-.HasClone{z-index: 2;}
-.Clone{z-index: 1;}
+.AtomNum {
+    position: relative;
+    font-size: 100%;
+}
 
-.Hide{display: none;}
+.AtomName {
+    position: relative;
+}
 
-#TestOutput{font-size: 12px;}
-.DebugMode{color: #F00;}
+.AtomSymbol {
+    position: relative;
+    font-size: 220%;
+}
 
-.TempClass}{position: absolute;}
+.AtomWeight {
+    position: relative;
+    display: none;
+}
 
-.Duplicate{position: "absolute"; background-color: #F00;}
+.lbox {
+    width: 6%;
+    margin-bottom: 2.8%;
+    border: 1px solid #717272;
+}
 
+
+/* width: 12%; margin-bottom: 3%; */
+
+.xlbox {
+    /*width: 12%;*/
+    width: 4%;
+    margin-right: 0%;
+}
+
+
+/*margin-right: 4%;*/
+
+.sbox {
+    /*width: 33%;*/
+    width: 100%;
+    border: 1px solid #717272;
+}
+
+.red {
+    border: 1px solid #F00;
+}
+
+.DropZone {
+    padding-left: 4%;
+    margin-bottom: 0%;
+}
+
+
+/* padding-left: 10%; margin-bottom: 0%; */
+
+#DropWrap1 {
+    padding-left: 9%;
+}
+
+#DropWrap2 {}
+
+#DropWrap3 {}
+
+.DropWrapper {}
+
+.DropCoeff {
+    display: inline-block;
+}
+
+.DropElement {
+    display: inline-block;
+}
+
+.DropChargeAndIndex {
+    display: inline-block;
+}
+
+.DropCharge {}
+
+.DropIndex {}
+
+.DropSpacer {
+    width: 70%;
+}
+
+.DroppedDraggable {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.DropZone .Dropped {
+    text-align: center;
+}
+
+.ui-draggable-dragging {
+    text-align: center;
+}
+
+
+/*Align center for all dragged elements*/
+
+.DropHighlight {
+    background-color: #0F0;
+}
+
+.NumbersWrapper {
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 0%;
+    position: absolute;
+    left: 26%;
+    margin-top: 1%;
+}
+
+
+/* position: absolute løser tilsyneladende problemet med NumbersWrapper i FireFox, Chrome og Safari */
+
+.IndexWrapper {}
+
+
+/* border: 1px solid #F00; */
+
+.ChargeWrapper {}
+
+
+/* border: 1px solid #F00; */
+
+.CoeffWrapper {
+    /*height: 50px; border: 1px solid #F00;*/
+}
+
+.ScoreWrapper {
+    display: inline-block;
+    padding: 3px;
+    border: 1px solid #717272;
+    margin-left: 27%;
+}
+
+.ScoreWrapper h3 {
+    margin: 3px 0px;
+}
+
+.NumberHeading {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.DragNum {
+    padding: 0px;
+    margin: 0.5%;
+    display: inline-block;
+    /*border: 1px solid #00F;*/
+    font-size: 22px;
+    text-align: center;
+    color: #000;
+    /*
+        IPAD-work-around til at faa HintClass-div's til at lukke:
+        http://stackoverflow.com/questions/7892863/jquery-click-not-working-with-ipad
+        http://www.mitch-solutions.com/blog/17-ipad-jquery-live-click-events-not-working
+*/
+    /*cursor:pointer;*/
+}
+
+.IndexNum {}
+
+.ChargeNum {}
+
+.CoeffNum {}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.droppable {
+    /*border: 1px solid #717272;*/
+}
+
+.XTEST {
+    background-color: #0F0;
+}
+
+.FontRed {
+    color: #F00;
+}
+
+.FontGreen {
+    color: #0F0;
+}
+
+.FontBlue {
+    color: #00F;
+}
+
+.HasClone {
+    z-index: 2;
+}
+
+.Clone {
+    z-index: 1;
+}
+
+.Hide {
+    display: none;
+}
+
+#TestOutput {
+    font-size: 12px;
+}
+
+.DebugMode {
+    color: #F00;
+}
+
+.TempClass
+}
+{
+    position: absolute;
+}
+.Duplicate {
+    position: "absolute";
+    background-color: #F00;
+}
 
 /*
 	===============================================================  
 					Color classes for the periodic table
 	===============================================================  
 */
-
-.AlkaliMetal{}
-.AlkaliEarthMetal{}
-.Metalloid{}
-.NobelGas{}
-.Halogen{}
-.PostTransMetal{}
-.TransMetal{}
-.OtherNonMetal{}
-
-.Metal{background-color: #5d6672;}
-.NobelGas{background-color: #276f7c;}
-.Halogen{background-color: #277e8e;}
-.OtherNonMetal{background-color: #277e8e;}
-.Metalloid{background-color: #277e8e;}
-.NonMetal{}  /*background-color: #3399CC;*/
+.AlkaliMetal {}
+.AlkaliEarthMetal {}
+.Metalloid {}
+.NobelGas {}
+.Halogen {}
+.PostTransMetal {}
+.TransMetal {}
+.OtherNonMetal {}
+.Metal {
+    background-color: #5d6672;
+}
+.NobelGas {
+    background-color: #276f7c;
+}
+.Halogen {
+    background-color: #277e8e;
+}
+.OtherNonMetal {
+    background-color: #277e8e;
+}
+.Metalloid {
+    background-color: #277e8e;
+}
+.NonMetal {}
+/*background-color: #3399CC;*/

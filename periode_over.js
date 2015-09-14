@@ -136,8 +136,8 @@
          } else {
              number_txt = "de " + number;
          }
-         $(".spm").html("Korrekte svar: <span class='QuestionTask'>" + score + " / " + JsonObj_pSystemEx.length +
-             "</span></div> Fejl: <span class='QuestionTask'>0</span><br/><span class='QuestionTask'>Find " + number_txt + " grundstoffer som " + spm + "</span>");
+         $(".spm").html("<h4 class='QuestionText'>Find " + number_txt + " grundstoffer som " + spm + "</span> <br/><h5>Korrekte svar: <span class='QuestionTask'>" + score + " / " + JsonObj_pSystemEx.length +
+             "</span></div> Fejl: <span class='QuestionTask'>0</span><br/></h5>");
 
          //alert("pose it");
          console.log("end pose question.. (runde)" + runde);
