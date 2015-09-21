@@ -77,7 +77,7 @@
          console.log("Number: " + number + ", rigtige: " + rigtige);
 
          if (rigtige > number - 1) {
-             UserMsgBox(".question_container", "Rigtigt svaret!");
+             UserMsgBox(".inner_container", "Rigtigt svaret!");
              for (var i = 0; i < $(".ElementBox").length; i++) {
                  var a_num = parseInt($(".ElementBox").eq(i).find(".AtomNum").html());
                  if (svar.indexOf(a_num) > -1) {
@@ -96,7 +96,7 @@
              });
              score++;
          } else {
-             UserMsgBox(".question_container", "Du mangler stadig at finde " + (number - rigtige) + " grundstoffer. <br/>Evt forkerte svar er fjernet. Prøv igen");
+             UserMsgBox(".inner_container", "Du mangler stadig at finde " + (number - rigtige) + " grundstoffer. <br/>Evt forkerte svar er fjernet. Prøv igen");
              $(".MsgBox_bgr").css("background-color", "rgba(0,0,0,0.0)");
              $("#UserMsgBox").css("background-color", "#ddd").css("border-radius", "4px").css("opacity", "0.8");
          }
@@ -109,7 +109,7 @@
          if (runde > JsonObj_pSystemEx.length - 1) {
              console.log("END");
 
-             UserMsgBox(".question_container", "Du er nået hele rækken af spørgsmål igennem med " + score + " ud af " + JsonObj_pSystemEx.length + " rigtige svar. <br/>Klik for at starte forfra.");
+             UserMsgBox(".inner_container", "Du er nået hele rækken af spørgsmål igennem med " + score + " ud af " + JsonObj_pSystemEx.length + " rigtige svar. <br/>Klik for at starte forfra.");
              $(".MsgBox_bgr").css("background-color", "rgba(0,0,0,0.0)");
              $("#UserMsgBox").css("background-color", "#ddd").css("border-radius", "4px").css("opacity", "0.8");
              $(".MsgBox_bgr").click(function() {
