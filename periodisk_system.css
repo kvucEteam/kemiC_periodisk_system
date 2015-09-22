@@ -13,9 +13,13 @@ h4 {
     display: inline-block;
 }
 
-.container-fluid {
+/*.container-fluid {
     padding-left: 50px;
     padding-right: 50px;
+}*/
+
+.row {
+    margin: 0px;
 }
 
 .btn {
