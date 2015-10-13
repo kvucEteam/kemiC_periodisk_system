@@ -143,7 +143,9 @@ h4 {
 /* NOTE: 90/18 = 5%, og 5/18 = 0.27777% */
 
 .ElementBox:hover {
-    background-color: orange;
+    /* background-color: orange; */
+    background-color: #05a0a8;
+    color: #FFF;
 }
 
 .DummyElement {
@@ -400,19 +402,29 @@ h4 {
 .TransMetal {}
 .OtherNonMetal {}
 .Metal {
-    background-color: #5d6672;
+    /*background-color: #5d6672;*/
+    background-color: #756e29;
 }
+
 .NobelGas {
-    background-color: #276f7c;
+    /*background-color: #276f7c;*/
+    background-color: #e10098;
 }
+
 .Halogen {
-    background-color: #277e8e;
+    /*background-color: #277e8e;*/
+    background-color: #8158b7;
 }
+
 .OtherNonMetal {
-    background-color: #277e8e;
+    /*background-color: #277e8e;*/
+    background-color: #8158b7;
 }
+
 .Metalloid {
-    background-color: #277e8e;
+    /*background-color: #277e8e;*/
+    background-color: #8158b7;
 }
+
 .NonMetal {}
 /*background-color: #3399CC;*/
