@@ -408,7 +408,7 @@
             "A": 137.327
         }, {
             "name": "",
-            "sym": "57-71",
+            "sym": "<small>57-71</small>",
             "Class": "ElementSpace",
             "num": 93,
             "Z": 0,
@@ -535,7 +535,7 @@
             "A": 226
         }, {
             "name": "",
-            "sym": "89-103",
+            "sym": "<small>89-103</small>",
             "Class": "ElementSpace",
             "num": 111,
             "Z": 0,
