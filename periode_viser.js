@@ -4,7 +4,8 @@ $(document).ready(function() {
 $(".ElementBox").css("pointer-events","none");
 //$(".question_container").css("margin-top","-3%");
 
-$(".PeriodicTableWrapper").css("margin-top","7%");
+// $(".PeriodicTableWrapper").css("margin-top","7%");  // Commented out 03-02-2017
+$(".PeriodicTableWrapper").css("margin-top","10%");    // Added 03-02-2017
 $(".vis_container").append("<div class='selection_container btn btn-primary btn btn_clear'>Se alle atomer</div>");
 
     for (var i = 0; i < JsonObj_pSystemEx.length; i++) {
