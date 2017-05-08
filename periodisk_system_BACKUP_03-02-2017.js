@@ -813,51 +813,52 @@
         // MarkCertainCharactersAsSpecial([".AtomName", ".AtomSymbol"], ["H","L", "S", "I"], ["FontRed", "FontGreen", "FontBlue", "CapitalI"], "#");
 
         // When the window loades, scale all elements:
-        
-        // Scale the height on all ElmentBox
-        $(".ElementBox").height(6 / 5 * $(".ElementBox").width()); // Rektangulære boxe
-        // $( ".ElementBox" ).height( $( ".ElementBox" ).width() );        // Kvardratiske boxe  
+        $(window).load(function() {
+            // Scale the height on all ElmentBox
+            $(".ElementBox").height(6 / 5 * $(".ElementBox").width()); // Rektangulære boxe
+            // $( ".ElementBox" ).height( $( ".ElementBox" ).width() );        // Kvardratiske boxe  
 
-        // Scale the height on all small and large boxes
-        $(".lbox").height($(".lbox").width());
-        // $( ".xlbox" ).height( $( ".xlbox" ).width() );
-        $(".sbox").height($(".sbox").width());
-        $(".DropSpacer").height($(".DropSpacer").width());
+            // Scale the height on all small and large boxes
+            $(".lbox").height($(".lbox").width());
+            // $( ".xlbox" ).height( $( ".xlbox" ).width() );
+            $(".sbox").height($(".sbox").width());
+            $(".DropSpacer").height($(".DropSpacer").width());
 
-        FontSizeScalerNew(".PeriodicTableWrapper", [".AtomSymbol", ".NumberHeading", ".ElementBox", ".DragNum", ".ScoreHeaderH3",
-            ".ScoreHeader", ".ScoreNum", ".TryAgain", ".NextQuestion", ".QuizHeadingText h2",
-            ".QuizHeadingText h1", ".QuizHeadingTextCount", "#Feedbackhide", ".ScoreWrapper", ".question_container", ".h4", ".selection_container"
-            // "#0","#1","#2","#3","#4","#5","#6","#7","#8","#9","#10","#11","#12","#13","#14","#15","#16","#17","#18","#19","#20","#21","#22","#23","#24","#25","#26","#27"
-        ], 1425);
+            FontSizeScalerNew(".PeriodicTableWrapper", [".AtomSymbol", ".NumberHeading", ".ElementBox", ".DragNum", ".ScoreHeaderH3",
+                ".ScoreHeader", ".ScoreNum", ".TryAgain", ".NextQuestion", ".QuizHeadingText h2",
+                ".QuizHeadingText h1", ".QuizHeadingTextCount", "#Feedbackhide", ".ScoreWrapper", ".question_container", ".h4", ".selection_container"
+                // "#0","#1","#2","#3","#4","#5","#6","#7","#8","#9","#10","#11","#12","#13","#14","#15","#16","#17","#18","#19","#20","#21","#22","#23","#24","#25","#26","#27"
+            ], 1425);
 
-        $(".DragNum").width($(".DragNum").height());
+            $(".DragNum").width($(".DragNum").height());
 
-        console.log("WindowWidth: " + $(window).width());
+            console.log("WindowWidth: " + $(window).width());
 
-        // $( ".ElementBox" ).css( "font-size", String(50)+"%" );
-        
-    });
+            // $( ".ElementBox" ).css( "font-size", String(50)+"%" );
+        });
+
+        // When the window resizes, scale all elements: 
+        $(window).resize(function() {
+            // Scale the height on all ElmentBox
+            $(".ElementBox").height(6 / 5 * $(".ElementBox").width()); // Rektangulære boxe
+            // $( ".ElementBox" ).height( $( ".ElementBox" ).width() );       // Kvardratiske boxe
+
+            // Scale the height on all small and large boxes
+            $(".lbox").height($(".lbox").width());
+            // $( ".xlbox" ).height( $( ".xlbox" ).width() );
+            $(".sbox").height($(".sbox").width());
+            $(".DropSpacer").height($(".DropSpacer").width());
+
+            FontSizeScalerNew(".PeriodicTableWrapper", [".AtomSymbol", ".NumberHeading", ".ElementBox", ".DragNum", ".ScoreHeaderH3",
+                ".ScoreHeader", ".ScoreNum", ".TryAgain", ".NextQuestion", ".QuizHeadingText h2",
+                ".QuizHeadingText h1", ".QuizHeadingTextCount", "#Feedbackhide", ".ScoreWrapper", ".question_container", ".h4", ".selection_container"
+                // "#0","#1","#2","#3","#4","#5","#6","#7","#8","#9","#10","#11","#12","#13","#14","#15","#16","#17","#18","#19","#20","#21","#22","#23","#24","#25","#26","#27"
+            ], 1425);
+
+            $(".DragNum").width($(".DragNum").height());
+        });
 
 
-    // When the window resizes, scale all elements: 
-    $(window).resize(function() {
-        // Scale the height on all ElmentBox
-        $(".ElementBox").height(6 / 5 * $(".ElementBox").width()); // Rektangulære boxe
-        // $( ".ElementBox" ).height( $( ".ElementBox" ).width() );       // Kvardratiske boxe
-
-        // Scale the height on all small and large boxes
-        $(".lbox").height($(".lbox").width());
-        // $( ".xlbox" ).height( $( ".xlbox" ).width() );
-        $(".sbox").height($(".sbox").width());
-        $(".DropSpacer").height($(".DropSpacer").width());
-
-        FontSizeScalerNew(".PeriodicTableWrapper", [".AtomSymbol", ".NumberHeading", ".ElementBox", ".DragNum", ".ScoreHeaderH3",
-            ".ScoreHeader", ".ScoreNum", ".TryAgain", ".NextQuestion", ".QuizHeadingText h2",
-            ".QuizHeadingText h1", ".QuizHeadingTextCount", "#Feedbackhide", ".ScoreWrapper", ".question_container", ".h4", ".selection_container"
-            // "#0","#1","#2","#3","#4","#5","#6","#7","#8","#9","#10","#11","#12","#13","#14","#15","#16","#17","#18","#19","#20","#21","#22","#23","#24","#25","#26","#27"
-        ], 1425);
-
-        $(".DragNum").width($(".DragNum").height());
     });
 
 
